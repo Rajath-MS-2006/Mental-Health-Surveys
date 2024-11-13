@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #2e3a59, #5f7f9e);
+    color: #fff;
+    line-height: 1.6;
+    transition: background 0.4s ease;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+header p {
+    font-size: 1.25rem;
+    color: #f1f1f1;
+    opacity: 0.85;
+    margin-top: 10px;
+}
+
+/* Main Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #dcdcdc;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+/* Image Styles */
+.section-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Add smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Transition for Sections */
+.content-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover and Button Effects */
+button {
+    background: #ff5e5e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #ff3e3e;
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Section Heading Styling */
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Typography */
+p {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Footer Section (Optional) */
+footer {
+    background-color: #2e3a59;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
